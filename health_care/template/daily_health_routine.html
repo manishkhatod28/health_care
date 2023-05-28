@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Health Routine</title>
+</head>
+<body>
+    <h1>Daily Health Routine</h1>
+    <p>Date: {{ today }}</p>
+
+    <h2>Health Status</h2>
+    <ul>
+        <li>Exercise: {% if health_data.exercise %}Done{% else %}Pending{% endif %}</li>
+        <li>Medication: {% if health_data.medication %}Taken{% else %}Pending{% endif %}</li>
+        <li>Nutrition: {% if health_data.nutrition %}Taken{% else %}Pending{% endif %}</li>
+        <li>Sleep: {% if health_data.sleep %}Adequate{% else %}Insufficient{% endif %}</li>
+        <li>Hygiene: {% if health_data.hygiene %}Maintained{% else %}Pending{% endif %}</li>
+    </ul>
+</body>
+</html>
